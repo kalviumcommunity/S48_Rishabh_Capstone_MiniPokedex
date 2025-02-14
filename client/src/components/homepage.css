@@ -17,27 +17,21 @@ body, html {
     color: #fff;
     text-align: center;
     font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
   }
   
-  .home-container h1 {
-    font-size: 3em;
-    margin-bottom: 0.5em;
-    text-shadow: 2px 2px #333;
-  }
-  
-  .home-container p {
-    font-size: 1.2em;
-    margin-bottom: 1.5em;
-  }
-  
-  .button-container {
+  .nav-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     display: flex;
-    gap: 20px;
+    gap: 10px;
   }
   
   .home-button {
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 8px 15px;
+    font-size: 0.9em;
     color: #f12711;
     background-color: #fff;
     border: none;
@@ -48,6 +42,61 @@ body, html {
   }
   
   .home-button:hover {
+    transform: scale(1.1);
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px #333;
+  }
+  
+  .subtitle {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+  }
+  
+  .sticker-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .pokemon-sticker {
+    width: 100px;
+    transition: transform 0.3s;
+  }
+  
+  .pokemon-sticker:hover {
+    transform: scale(1.1) rotate(10deg);
+  }
+  
+  .description {
+    font-size: 1.1em;
+    max-width: 600px;
+    line-height: 1.5;
+    padding: 0 20px;
+  }
+  
+  .legendary-left, .legendary-right {
+    position: absolute;
+    width: 250px;
+    opacity: 0.8;
+    transition: transform 0.3s;
+  }
+  
+  .legendary-left {
+    left: -50px;
+    bottom: 10%;
+  }
+  
+  .legendary-right {
+    right: -50px;
+    top: 10%;
+  }
+  
+  .legendary-left:hover, .legendary-right:hover {
     transform: scale(1.1);
   }
   
