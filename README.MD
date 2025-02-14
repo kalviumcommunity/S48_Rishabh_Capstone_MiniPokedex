@@ -23,7 +23,7 @@ Frontend Development:
 A modern React-based frontend with components for displaying Pokémon and a form for new entries.
 Mobile-friendly design for accessibility across devices.
 Deployment:
-Full-stack deployment of the backend and frontend on free hosting platforms like Render or Netlify.
+Full-stack deployment of the backend and frontend on free hosting platforms like Render or netlify.
       6. 6. Pokémon Battle Feature:
 Users can select two Pokémon to battle against each other.
 The battle depends on the pokemons power stats
