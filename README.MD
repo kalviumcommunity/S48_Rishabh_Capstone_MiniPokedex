@@ -15,10 +15,10 @@ Pokémon Listing (GET API):
 A visually appealing interface where users can browse a list of Pokémon fetched from the backend.
 Includes Pokémon details such as name, type, and unique ID.
 Add New Pokémon (POST API):
-A user-friendly form to allow users to contribute to the Poxedex by adding new Pokémon entries.
+A user-friendly form to allow users to contribute to the Poxedex by adding new pokémon entries.
 Includes fields for name, type, and a brief description.
 Database Management:
-A structured database (or JSON file) to store Pokémon data, ensuring quick retrieval and seamless updates.
+A structured database (or JSON file) to store pokémon data, ensuring quick retrieval and seamless updates.
 Frontend Development:
 A modern React-based frontend with components for displaying Pokémon and a form for new entries.
 Mobile-friendly design for accessibility across devices.
