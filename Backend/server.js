@@ -1,15 +1,14 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const PORT = 5000;
+const pokemonRoutes = require('./Routes/pokemon.js');
 
 app.use(cors());
-app.use(express.json());
+app.use(express.json()); // This is necessary to parse JSON bodies
 
-// Routes
-app.use('/api/pokemon', require('./routes/pokemon'));
+app.use('/api/pokemon', pokemonRoutes);
 
-// Start Server
+const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
