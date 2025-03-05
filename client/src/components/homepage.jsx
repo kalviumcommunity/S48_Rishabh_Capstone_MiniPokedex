@@ -1,5 +1,5 @@
 import React from 'react';
-import './homepage.css';
+import './HomePage.css';
 import { Link } from 'react-router-dom';
 
 const HomePage = () => {
@@ -42,6 +42,8 @@ const HomePage = () => {
         alt="Mewtwo" 
         className="legendary-right"
       />
+
+      {/* Additional card stickers can be added here if desired */}
     </div>
   );
 };
