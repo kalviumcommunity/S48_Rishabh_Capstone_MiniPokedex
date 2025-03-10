@@ -5,7 +5,14 @@ import { Link } from 'react-router-dom';
 const HomePage = () => {
   return (
     <div className="home-container">
-      <div className="nav-buttons">
+      {/* New left navigation button for Gallery */}
+      <div className="nav-left">
+        <Link to="/gallery">
+          <button className="home-button">Gallery</button>
+        </Link>
+      </div>
+      {/* Existing right navigation for Sign Up and Login */}
+      <div className="nav-right">
         <Link to="/signup">
           <button className="home-button">Sign Up</button>
         </Link>
@@ -21,9 +28,21 @@ const HomePage = () => {
       </p>
 
       <div className="sticker-container">
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu" className="pokemon-sticker" />
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Bulbasaur" className="pokemon-sticker" />
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png" alt="Charmander" className="pokemon-sticker" />
+        <img 
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" 
+          alt="Pikachu" 
+          className="pokemon-sticker" 
+        />
+        <img 
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" 
+          alt="Bulbasaur" 
+          className="pokemon-sticker" 
+        />
+        <img 
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png" 
+          alt="Charmander" 
+          className="pokemon-sticker" 
+        />
       </div>
 
       <p className="description">
@@ -36,14 +55,11 @@ const HomePage = () => {
         alt="Articuno" 
         className="legendary-left"
       />
-
       <img 
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png" 
         alt="Mewtwo" 
         className="legendary-right"
       />
-
-      {/* Additional card stickers can be added here if desired */}
     </div>
   );
 };
