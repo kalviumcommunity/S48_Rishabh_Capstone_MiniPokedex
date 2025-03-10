@@ -1,0 +1,23 @@
+/* Reset & Body-Level Gradient */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* The gradient on the body so it fills the entire screen */
+    background: linear-gradient(135deg, #f5af19, #f12711);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  #root, .App {
+    /* Ensure React’s root container also fills the screen */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  

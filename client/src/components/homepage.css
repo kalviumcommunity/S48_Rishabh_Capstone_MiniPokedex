@@ -1,102 +1,158 @@
+/* homepage.css */
 body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-  }
-  
-  .home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    width: 100vw;
-    background: linear-gradient(135deg, #f5af19, #f12711);
-    color: #fff;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .nav-buttons {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    gap: 10px;
-  }
-  
-  .home-button {
-    padding: 8px 15px;
-    font-size: 0.9em;
-    color: #f12711;
-    background-color: #fff;
-    border: none;
-    border-radius: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: transform 0.3s;
-  }
-  
-  .home-button:hover {
-    transform: scale(1.1);
-  }
-  
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #f5af19, #f12711);
+  color: #fff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Navigation buttons container */
+.nav-left {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+
+.nav-right {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  display: flex;
+  gap: 5px;
+  padding-right: 20px;
+  max-width: 100%;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+/* Button styling */
+.home-button {
+  padding: 8px 15px;
+  font-size: 0.9em;
+  color: #f12711;
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.home-button:hover {
+  transform: scale(1.1);
+}
+
+/* Content styling */
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  text-shadow: 2px 2px #333;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.sticker-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pokemon-sticker {
+  width: 100px;
+  transition: transform 0.3s;
+}
+
+.pokemon-sticker:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+
+.description {
+  font-size: 1.1em;
+  max-width: 600px;
+  line-height: 1.5;
+  padding: 0 20px;
+}
+
+/* Legendary Pokémon styling */
+.legendary-left, .legendary-right {
+  position: absolute;
+  width: 250px;
+  opacity: 0.8;
+  transition: transform 0.3s;
+}
+
+.legendary-left {
+  left: 20px;
+  bottom: 10%;
+}
+
+.legendary-right {
+  right: 20px;
+  top: 10%;
+}
+
+.legendary-left:hover, .legendary-right:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
   h1 {
-    font-size: 3em;
-    margin-bottom: 0.5em;
-    text-shadow: 2px 2px #333;
+    font-size: 2em;
   }
-  
+
   .subtitle {
-    font-size: 1.2em;
-    margin-bottom: 1.5em;
+    font-size: 1em;
   }
-  
-  .sticker-container {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    margin: 20px 0;
-  }
-  
+
   .pokemon-sticker {
-    width: 100px;
-    transition: transform 0.3s;
+    width: 80px;
   }
-  
-  .pokemon-sticker:hover {
-    transform: scale(1.1) rotate(10deg);
-  }
-  
-  .description {
-    font-size: 1.1em;
-    max-width: 600px;
-    line-height: 1.5;
-    padding: 0 20px;
-  }
-  
+
   .legendary-left, .legendary-right {
-    position: absolute;
-    width: 250px;
-    opacity: 0.8;
-    transition: transform 0.3s;
+    width: 150px;
   }
-  
-  .legendary-left {
-    left: -50px;
-    bottom: 10%;
+}
+
+@media (max-width: 480px) {
+  .nav-right {
+    padding-right: 10px;
+    gap: 3px;
   }
-  
-  .legendary-right {
-    right: -50px;
-    top: 10%;
+
+  .home-button {
+    padding: 6px 12px;
+    font-size: 0.8em;
   }
-  
-  .legendary-left:hover, .legendary-right:hover {
-    transform: scale(1.1);
+
+  h1 {
+    font-size: 1.8em;
   }
-  
+
+  .sticker-container {
+    gap: 15px;
+  }
+}
