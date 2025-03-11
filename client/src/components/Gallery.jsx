@@ -46,6 +46,9 @@ const Gallery = () => {
         <Link to="/">
           <button className="home-button">Home</button>
         </Link>
+        <Link to="/battle">
+          <button className="battle-button">Battle</button>
+        </Link>
       </div>
 
       <h2 className="gallery-title">Pokémon Gallery</h2>

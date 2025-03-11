@@ -6,6 +6,8 @@ import Login from './components/Login';
 import AddPokemon from './components/AddPokemon';
 import Gallery from './components/Gallery';
 import './global.css';
+import BattlePage from './components/BattlePage';
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/add" element={<AddPokemon />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/battle" element={<BattlePage />} />
       </Routes>
     </Router>
   );

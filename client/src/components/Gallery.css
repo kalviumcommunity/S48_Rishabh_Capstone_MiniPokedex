@@ -1,3 +1,4 @@
+/* Gallery.css */
 .gallery-page {
   width: 100vw;
   min-height: 100vh;
@@ -8,35 +9,56 @@
   font-family: Arial, sans-serif;
 }
 
+/* Navigation - Fixed Positioning */
 .gallery-nav {
   position: absolute;
   top: 20px;
   left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   z-index: 150;
+  padding: 0;
+  margin: 0;
 }
 
-.home-button {
-  padding: 8px 15px;
+/* Unified Button Styling */
+.home-button,
+.battle-button {
+  padding: 8px 20px !important; /* Force same size */
   font-size: 0.9em;
-  color: #f12711;
-  background-color: #fff;
   border: none;
   border-radius: 25px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
   cursor: pointer;
   transition: transform 0.3s;
   white-space: nowrap;
 }
 
-.home-button:hover {
+/* Home Button Colors */
+.home-button {
+  color: #f12711;
+  background-color: #fff;
+}
+
+/* Battle Button Colors */
+.battle-button {
+  color: #fff;
+  background-color: #f12711;
+}
+
+/* Hover Effects */
+.home-button:hover,
+.battle-button:hover {
   transform: scale(1.1);
 }
 
+/* Rest of your existing CSS remains unchanged */
 .gallery-title {
   text-align: center;
   font-size: 2.5em;
-  margin-bottom: 20px;
+  margin: 60px 0 20px;
   text-shadow: 2px 2px #333;
 }
 
