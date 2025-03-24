@@ -33,3 +33,5 @@ The losing Pokémon is removed from the database which makes this project dynami
 Conclusion:
 
 The Mini Poxedex project offers a fun and interactive way for Pokémon fans to explore and manage their favorite characters. By integrating modern web technologies, the project demonstrates essential skills in full-stack application development, with a focus on user experience, scalability, and functionality.
+
+Backend server deployed link - https://s48-rishabh-capstone-minipokedex-1.onrender.com
